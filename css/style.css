@@ -63,7 +63,6 @@ header nav {
   justify-content: center;
 }
 .pcImg img {
-  display: inline-block;
   width: 250px;
   height: 100%;
   background-size: cover;
@@ -199,3 +198,36 @@ footer p {
   transition-delay: 0.3s;
   color: #333;
 }
+/* @media screen and (max-width: 1199px) {
+  .keyvisual h1 {
+    padding-top: 250px;
+  }
+  .keyvisual h2 {
+    padding-bottom: 250px;
+  }
+  .pcImg,
+  .workText {
+    width: 100%;
+  }
+  .flexEnd,
+  .flexWrap {
+    flex-direction: column;
+  }
+  .workText {
+    margin-top: 20px;
+  }
+  .workText p {
+    padding-bottom: 50px;
+  }
+  .flexWrap {
+    align-items: center;
+  }
+  .skills-inner {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  .skills-inner:nth-child(4n) {
+    margin-top: 80px;
+  }
+} */
