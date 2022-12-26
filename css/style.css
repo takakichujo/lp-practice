@@ -1,9 +1,10 @@
 @charset "utf-8";
-body {
-  background: #fff;
-}
 header {
   padding: 15px 0;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 10;
 }
 a {
   text-decoration: none;
