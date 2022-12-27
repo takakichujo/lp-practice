@@ -182,7 +182,7 @@ header nav {
   text-align: center;
   color: #8c8c8c;
 }
-.snsIcon i:hover {
+.snsIcon :hover {
   transition-delay: 0.5s;
   background-color: #fff;
 }
@@ -206,7 +206,7 @@ footer p {
 }
 @media screen and (max-width: 1199px) {
   .inner {
-    width: 100%;
+    width: 97%;
   }
   .keyvisual {
     padding: 250px;
@@ -233,8 +233,11 @@ footer p {
     margin-right: 0;
   }
 
-  .skills-inner:nth-child(4n) {
-    margin-top: 80px;
+  .skills-inner:nth-child(3n) {
+    margin-bottom: 80px;
+  }
+  .skills-inner:last-child {
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 767px) {
