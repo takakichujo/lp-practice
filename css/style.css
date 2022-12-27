@@ -37,7 +37,7 @@ header nav {
   padding: 400px 0;
 }
 .keyvisual h1 {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   font-size: 65px;
   font-weight: 700;
   color: #6ba7eb;
@@ -200,15 +200,18 @@ footer p {
   transition-delay: 0.3s;
   color: #333;
 }
-/* @media screen and (max-width: 1199px) {
-  .keyvisual h1 {
-    padding-top: 250px;
+#menu-btn-check,
+.hamburger-menu {
+  display: none;
+}
+@media screen and (max-width: 1199px) {
+  .inner {
+    width: 100%;
   }
-  .keyvisual h2 {
-    padding-bottom: 250px;
+  .keyvisual {
+    padding: 250px;
   }
-  .pcImg,
-  .workText {
+  .work {
     width: 100%;
   }
   .flexEnd,
@@ -218,18 +221,84 @@ footer p {
   .workText {
     margin-top: 20px;
   }
-  .workText p {
+
+  .work {
     padding-bottom: 50px;
   }
   .flexWrap {
     align-items: center;
   }
   .skills-inner {
-    margin-bottom: 0;
+    margin-top: 0;
     margin-right: 0;
   }
 
   .skills-inner:nth-child(4n) {
     margin-top: 80px;
   }
-} */
+}
+@media screen and (max-width: 767px) {
+  .keyvisual {
+    padding: 200px 0;
+  }
+  .keyvisual h1 {
+    font-size: 40px;
+  }
+  .keyvisual h2 {
+    font-size: 30px;
+  }
+  .tablePlan th {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .tablePlan td {
+    font-size: 12px;
+  }
+  .flexCenter {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sns {
+    padding: 50px 15px;
+  }
+  .snsIcon {
+    width: 100%;
+    margin: 50px;
+  }
+  .menu-btn {
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    border: solid 2px #a9a9a9;
+    border-radius: 3px;
+  }
+  .menu-btn span,
+  .menu-btn span:before,
+  .menu-btn span:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 27px;
+    border-radius: 3px;
+    background-color: #a9a9a9;
+    position: absolute;
+  }
+  .menu-btn span:before {
+    bottom: 8px;
+  }
+  .menu-btn span:after {
+    top: 8px;
+  }
+  header nav {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+}
