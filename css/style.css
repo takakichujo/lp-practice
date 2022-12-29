@@ -182,8 +182,8 @@ header nav {
   text-align: center;
   color: #8c8c8c;
 }
-.snsIcon :hover {
-  transition-delay: 0.5s;
+.snsIcon:hover {
+  transition: 0.5s;
   background-color: #fff;
 }
 footer {
@@ -209,7 +209,7 @@ footer p {
     width: 97%;
   }
   .keyvisual {
-    padding: 250px;
+    padding: 250px 0;
   }
   .work {
     width: 100%;
@@ -303,5 +303,12 @@ footer p {
   }
   .hamburger-menu {
     display: block;
+  }
+  .sectionTitle {
+    width: 100%;
+  }
+  .tablePlan {
+    table-layout: auto;
+    width: 100%;
   }
 }
